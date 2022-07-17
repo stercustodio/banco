@@ -1,8 +1,6 @@
 from datetime import date
-from tkinter.filedialog import SaveFileDialog
 
 from banco.models.conta import Conta
-from banco.models.transferencia import Transferencia
 from django.db import models
 
 
