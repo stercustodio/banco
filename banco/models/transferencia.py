@@ -3,7 +3,8 @@ from django.db import models
 
 
 class Transferencia(models.Model):
-      
+    '''Possibilita a transferencia de valores monetários entre contas'''
+
     conta_origem = models.OneToOneField(Conta, on_delete=models.CASCADE, related_name='conta_origem')
     conta_destino = models.OneToOneField(Conta, on_delete=models.CASCADE, related_name='conta_destino')
     valor_transferencia = models.FloatField()
