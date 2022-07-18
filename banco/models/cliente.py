@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Cliente(models.Model):
+    '''Cadastrar informações básicas do cliente'''
     
     nome = models.CharField(max_length=60)
     cpf = models.CharField(max_length=14, unique=True)
