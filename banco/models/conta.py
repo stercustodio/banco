@@ -5,6 +5,7 @@ from django.db import models
 
 
 class Conta(models.Model):
+    '''Criar uma conta para um cliente'''
     
     cliente = models.OneToOneField(Cliente, on_delete=models.CASCADE, related_name='cliente')
     dt_criacao = models.DateTimeField(auto_now_add=True)
